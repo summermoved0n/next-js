@@ -4,6 +4,7 @@ import { Form, Formik } from 'formik';
 import Button from '@/app/components/button';
 import InputField from '@/app/components/input-field';
 import LogoUploader from '@/app/components/logo-uploader';
+
 export type CompanyFieldValues = {
   name: string;
   status: string;
@@ -12,6 +13,7 @@ export type CompanyFieldValues = {
   date: string;
   description: string;
 };
+
 const initialValues: CompanyFieldValues = {
   name: '',
   status: '',
@@ -20,9 +22,11 @@ const initialValues: CompanyFieldValues = {
   date: '',
   description: '',
 };
+
 export interface CompanyFormProps {
   onSubmit: (values: CompanyFieldValues) => void | Promise<void>;
 }
+
 export default function CompanyForm({ onSubmit }: CompanyFormProps) {
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit}>
