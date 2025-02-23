@@ -31,6 +31,8 @@ export default async function Page({ params }: PageProps) {
     notFound();
   }
 
+  console.log(company);
+
   const dehydratedState = dehydrate(queryClient);
 
   return (
