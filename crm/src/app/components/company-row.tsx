@@ -35,13 +35,13 @@ export default function CompanyRow({ company }: CompanyRowProps) {
               company.hasPromotions ? 'text-green-700' : 'text-red-700',
             )}
           >
-            {company.hasPromotions ? 'Yes' : 'No'}{' '}
+            {company.hasPromotions ? 'Yes' : 'No'}
           </span>
         </div>
       </td>
-      <td>{company.countryTitle}</td>{' '}
+      <td>{company.countryTitle}</td>
       <td className="rounded-r">
-        {new Date(company.joinedDate).toLocaleDateString('uk-UA')}{' '}
+        {new Date(company.joinedDate).toLocaleDateString('uk-UA')}
       </td>
     </tr>
   );
