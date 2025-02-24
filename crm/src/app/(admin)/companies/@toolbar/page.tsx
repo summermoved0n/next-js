@@ -7,8 +7,10 @@ export interface PageProps {}
 
 export default function Page({}: PageProps) {
   return (
-    <Toolbar action={<AddCompanyButton />}>
-      <SearchInput />
-    </Toolbar>
+    <>
+      <Toolbar action={<AddCompanyButton />}>
+        <SearchInput />
+      </Toolbar>
+    </>
   );
 }
